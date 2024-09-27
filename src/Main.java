@@ -70,7 +70,8 @@ public class Main {
             /*
             ToDo: Get input, if starting with a '/', then send to Commands class to be interpreted as a command.
             If starting with a 0, (which is part of an acceptable prefix), parse the immediate value after as a number in the corresponding number system,
-            if the user has not entered a destination number system, default to denery (unless denary is the input system, in which case, default to binary).
+            if the user has not entered a destination number system, default to denary (unless denary is the input system, in which case, default to binary).
+            Also allow the user to set default bases.
             */
             }
         }
