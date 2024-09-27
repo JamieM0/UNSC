@@ -10,7 +10,7 @@ public class Main {
             Scanner scanner = new Scanner(System.in);
 
             System.out.println("Welcome to the Universal Number System Converter (UNSC)!\n");
-            //ToDo: Make it recognise when the program is being run for the first time
+            //ToDo: Make it recognise when the program is being run for the first time.
             System.out.println("It looks like it's your first time using UNSC. To convert to and from different number systems, use the standard prefixes.\n" +
                 "You can use them in a format like this: 0d29384 0b. This will tell UNSC to convert the denary number 29384 to binary.\n\n" +
                 "For a list of all prefixes currently supported by UNSC, enter the prefix list command: /prefix list\n" +
