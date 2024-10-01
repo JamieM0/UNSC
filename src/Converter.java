@@ -1,3 +1,5 @@
+import java.text.DecimalFormat;
+
 public class Converter {
     public static double BinaryToDenary(double binaryInput){
         return 0.0;
@@ -5,6 +7,9 @@ public class Converter {
 
     public static String Conversion(int inputBase, int outputBase, String inputValue)
     {
+
+        DecimalFormat df = new DecimalFormat("#");
+        df.setMaximumFractionDigits(8);
         double inputd=0.0;
         //Get inputVal in denary (if not already in it)
         if(inputBase==10)
@@ -26,13 +31,14 @@ public class Converter {
 
                 tmp+= curDen*Math.pow(inputBase, column);
             }
+
             inputd=tmp;
             //This works! :)
             //System.out.println("in to denary: " + inputd);
         }
 
         if(outputBase==10)
-            return String.valueOf(inputd);
+            return String.valueOf(df.format(inputd));
         else
         {
             //Convert inputd from denary to the output base
